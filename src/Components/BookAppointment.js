@@ -9,10 +9,10 @@ import { useNavigate } from "react-router-dom";
 import "../Styles/BookAppointment.css";
 
 function BookAppointment() {
-  const navigate = useNavigate();
-
   const handleBookAppointmentClick = () => {
-    navigate("/https://iblood-donor-hub.onrender.com/login");
+    const newTabUrl = "https://iblood-donor-hub.onrender.com/login";
+
+    window.open(newTabUrl, "_blank");
   };
 
   return (

@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import "../Styles/Hero.css";
 
 function Hero() {
-  const navigate = useNavigate();
   const [goUp, setGoUp] = useState(false);
 
   const scrollToTop = () => {
@@ -14,7 +13,9 @@ function Hero() {
   };
 
   const handleBookAppointmentClick = () => {
-    navigate("/https://iblood-donor-hub.onrender.com/login");
+    const newTabUrl = "https://iblood-donor-hub.onrender.com/login";
+
+    window.open(newTabUrl, "_blank");
   };
 
   useEffect(() => {
