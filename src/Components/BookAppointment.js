@@ -12,7 +12,7 @@ function BookAppointment() {
   const navigate = useNavigate();
 
   const handleBookAppointmentClick = () => {
-    navigate("/appointment");
+    navigate("/https://iblood-donor-hub.onrender.com/login");
   };
 
   return (
